@@ -1,0 +1,18 @@
+package com.bus.dao;
+
+import java.sql.SQLException;
+import java.util.List;
+
+import com.bus.dao.model.Bus;
+
+//车辆
+public interface BusDao {
+
+	List<Bus> find(Bus condition);
+	
+	void updateBus(Bus bus) throws SQLException;
+	
+	void dropBus(Bus bus) throws SQLException;
+	
+	void saveBus(Bus bus) throws SQLException;
+}
